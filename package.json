@@ -6,11 +6,12 @@
     "scripts": {
         "dev": "nodemon"
     },
-
     "dependencies": {
         "express": "^4.17.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.4"
-    }
+    },
+    "repository": "https://github.com/dudubisinella/intro-node.git",
+    "author": "Eduardo Bisinella <bisinella7@gmail.com>"
 }
