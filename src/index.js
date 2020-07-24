@@ -45,7 +45,14 @@ app.put("/projects/:id", (request, response) => {
 });
 
 app.delete("/projects/:id", (request, response) => {
-    projects.findByIdAndRemove(request.params.id);
+    const { id } = request.params;
+    const { title, owner } = request.body;
+
+    const project = {
+        id,
+        title,
+        owner,
+    };
     return response.send();
     // return response.json(["Projeto 2", "Projeto 3"]);
 });
